@@ -957,63 +957,63 @@ const cardsData = [{
 }, {
   titleOne: 'Калбак-Таш',
   titleTwo: 'Чуйский Тракт',
-  imageUrl: '../img/svg/cuisk.webp'
+  imageUrl: '../../img/svg/cuisk.jpeg'
 }, {
   titleOne: 'Озеро Кезенойам',
   titleTwo: 'Андийский Хребет',
-  imageUrl: '../img/svg/ozero.webp'
+  imageUrl: '../../img/svg/ozero.jpeg'
 }, {
   titleOne: 'Кунгурская Пещера',
   titleTwo: 'Пермь',
-  imageUrl: '../img/svg/kun3.webp'
+  imageUrl: '../../img/svg/kun3.png'
 }, {
   titleOne: 'Шиханы',
   titleTwo: 'Башкирия',
-  imageUrl: '../img/svg/bashk.webp'
+  imageUrl: '../../img/svg/bashk.jpeg'
 }, {
   titleOne: 'Эгикал',
   titleTwo: 'Ингушетия',
-  imageUrl: '../img/svg/ingush.webp'
+  imageUrl: '../../img/svg/ingush.jpeg'
 }, {
   titleOne: 'Чарские пески',
   titleTwo: 'Забайкалье',
-  imageUrl: '../img/svg/zabaiak.webp'
+  imageUrl: '../../img/svg/zabaiak.jpeg'
 }, {
   titleOne: 'Вулкан Тятя',
   titleTwo: 'Курильские острова',
-  imageUrl: '../img/svg/kurili.webp'
+  imageUrl: '../../img/svg/kurili.jpeg'
 }, {
   titleOne: 'Хибины',
   titleTwo: 'Кольский полуостров',
-  imageUrl: '../img/svg/hibini.webp'
+  imageUrl: '../../img/svg/hibini.jpeg'
 }, {
   titleOne: 'Каньон Рускеала',
   titleTwo: 'Карелия',
-  imageUrl: '../img/svg/kareil.webp'
+  imageUrl: '../../img/svg/kareil.jpeg'
 }, {
   titleOne: 'Гамсутль',
   titleTwo: 'Дагестан',
-  imageUrl: '../img/svg/gamstul.webp'
+  imageUrl: '../../img/svg/gamstul.jpeg'
 }, {
   titleOne: 'Васюганские болота',
   titleTwo: 'Томская область',
-  imageUrl: '../img/svg/tomsk.webp'
+  imageUrl: '../../img/svg/tomsk.jpeg'
 }, {
   titleOne: 'Патомский кратер',
   titleTwo: 'Сибирь',
-  imageUrl: '../img/svg/sibir.webp'
+  imageUrl: '../../img/svg/sibir.jpg'
 }, {
   titleOne: 'Большой Тхач',
   titleTwo: 'Кавказ',
-  imageUrl: '../img/svg/kavkaz.webp'
+  imageUrl: '../../img/svg/kavkaz.jpeg'
 }, {
   titleOne: 'Сейдозеро',
   titleTwo: 'Лапландия',
-  imageUrl: '../img/svg/lapland.webp'
+  imageUrl: '../../img/svg/lapland.jpeg'
 }, {
   titleOne: 'Новгородский детинец',
   titleTwo: 'Великий Новгород',
-  imageUrl: '../img/svg/novgorod.webp'
+  imageUrl: '../../img/svg/novgorod.jpeg'
 }
 // Добавьте остальные данные для остальных карточек
 ];
@@ -47950,6 +47950,7 @@ return Unipointer;
 /******/ 	__webpack_require__("./src/js/main.js");
 /******/ 	__webpack_require__("./src/js/components/App.js");
 /******/ 	__webpack_require__("./src/js/components/index.js");
+/******/ 	__webpack_require__("./src/js/vendor/focus-visible.js");
 /******/ 	__webpack_require__("./src/js/functions/burger.js");
 /******/ 	__webpack_require__("./src/js/functions/check-viewport.js");
 /******/ 	__webpack_require__("./src/js/functions/disable-scroll.js");
@@ -47959,7 +47960,6 @@ return Unipointer;
 /******/ 	__webpack_require__("./src/js/functions/mobile-check.js");
 /******/ 	__webpack_require__("./src/js/functions/throttle.js");
 /******/ 	__webpack_require__("./src/js/functions/validate-forms.js");
-/******/ 	__webpack_require__("./src/js/vendor/focus-visible.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/react/components/MyCardComponents.jsx");
 /******/ 	
 /******/ })()
