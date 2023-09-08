@@ -827,7 +827,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 0px;
-  background-image: url(/img/svg/kun3.webp);
+  background-image: url(../../img/svg/kun3.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2805,7 +2805,7 @@ html {
   box-sizing: border-box;
   margin-top: 0px;
   height: 100%;
-  background-image: url(/img/svg/podarok.webp);
+  background-image: url(../../img/svg/podarok.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3472,17 +3472,16 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-grid-columns: 1fr 1fr; /* Два столбца с одинаковой шириной */
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 350px;
   display: -ms-grid;
   display: grid;
 }
-
 @media (max-width: 999px) {
   .popup__grid {
-    -ms-grid-columns: 1fr 1fr; /* Два столбца с одинаковой шириной */
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3491,7 +3490,6 @@ html {
     margin-bottom: 50px;
   }
 }
-
 
 /* Styles for each grid element */
 .popup__elemtnts {
@@ -3866,7 +3864,7 @@ html {
   -webkit-column-gap: 5rem;
   -moz-column-gap: 5rem;
   column-gap: 5rem;
-  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 1fr))[3];
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-flow: row dense;
   display: -ms-grid;
@@ -3969,7 +3967,7 @@ html {
   -moz-column-gap: 2rem;
   -webkit-column-gap: 2rem;
   column-gap: 2rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 1fr))[6];
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-auto-flow: row dense;
   display: -ms-grid;
@@ -3986,7 +3984,7 @@ html {
   -moz-column-gap: 2rem;
   -webkit-column-gap: 2rem;
   column-gap: 2rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 1fr))[6];
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-auto-flow: row dense;
   -webkit-appearance: none;
@@ -6195,7 +6193,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 0px;
-  background-image: url(/img/svg/road.webp);
+  background-image: url(../../img/svg/road.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6210,7 +6208,7 @@ html {
 }
 @media (max-width: 999px) {
   .map__content {
-    background-image: url(/img/svg/road.webp);
+    background-image: url(../../img/svg/road.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -6908,7 +6906,7 @@ html {
   box-sizing: border-box;
   margin-top: 0px;
   padding: 0px;
-  background-image: url(/img/svg/oje.webp);
+  background-image: url(../../img/svg/oje.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7338,7 +7336,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 0px;
-  background-image: url(/img/svg/title.webp);
+  background-image: url(../../img/svg/title.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7460,23 +7458,21 @@ html {
 .partners-grid .partners-grid_list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr; /* Три столбца с одинаковой шириной */
+  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr 1fr; /* Два ряда с одинаковой высотой */
+  -ms-grid-rows: (1fr)[2];
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1.2375rem;
   list-style: none;
   padding: 0;
 }
-
 @media (max-width: 768px) {
   .partners-grid .partners-grid_list {
-    -ms-grid-columns: 1fr 1fr 1fr; /* Три столбца с одинаковой шириной */
+    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
 }
-
 @media (max-width: 375px) {
   .partners-grid .partners-grid_list {
     -ms-grid-columns: 1fr;
@@ -7588,8 +7584,8 @@ html {
 .nav__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr; /* Пять столбцов с одинаковой шириной */
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (minmax(0, 1fr))[5];
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin: 0.75rem;
   -ms-grid-column-span: 5;
   grid-column-end: 10;
@@ -7598,7 +7594,6 @@ html {
   list-style: none;
   padding: 0;
 }
-
 @media (max-width: 1024px) {
   .nav__list {
     display: none;
@@ -7671,8 +7666,8 @@ html {
 .column-three-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr; /* Два столбца с одинаковой шириной */
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   -ms-grid-column-span: 2;
   grid-column-end: 13;
   -ms-grid-column: 11;
@@ -7681,13 +7676,11 @@ html {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
-
 @media (max-width: 1024px) {
   .column-three-content {
     display: none;
   }
 }
-
 
 .header__login {
   display: -webkit-box;
@@ -8329,22 +8322,20 @@ html {
 .footer__column--main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr; /* Четыре столбца с одинаковой шириной */
+  -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   width: 100%;
   gap: 20px;
 }
-
 @media (max-width: 576px) {
   .footer__column--main {
-    -ms-grid-columns: 1fr 1fr 1fr; /* Три столбца с одинаковой шириной */
+    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 30px;
   }
 }
-
 
 .footer__column--one,
 .footer__column--two {
